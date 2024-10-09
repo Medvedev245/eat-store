@@ -2,18 +2,15 @@ import "modern-normalize";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-body {
-  margin: 0;
-
+  body {
+    font-family: 'Clash Display', sans-serif; 
   }
 
-
-ul {
+  ul {
     list-style: none;
     padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
+    margin: 0;
+  }
 
   h1,
   h2,
@@ -23,11 +20,11 @@ ul {
   h6,
   p {
     margin: 0;
-}
+  }
 
-img {
+  img {
     display: block;
     max-width: 100%;
     height: auto;
-}
+  }
 `;
