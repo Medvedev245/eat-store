@@ -16,6 +16,7 @@ const Layout = () => {
                   marginTop: "100px",
                 }}
               >
+                LOADING
                 {/* <div style={{ marginLeft: "auto", marginRight: "auto" }}>
                   <CircularProgress color="success" />
                 </div> */}
