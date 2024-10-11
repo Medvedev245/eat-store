@@ -2,6 +2,7 @@ import React from "react";
 import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import { ComponentLayout } from "./Layout.styled";
 
 const Layout = () => {
@@ -27,6 +28,7 @@ const Layout = () => {
           <Outlet />
         </Suspense>
       </main>
+      <Footer />
     </ComponentLayout>
   );
 };
