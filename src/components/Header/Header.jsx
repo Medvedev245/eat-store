@@ -7,29 +7,36 @@ import {
   IconsBlock,
   NavBar,
   Item,
+  LinkItem,
+  TitleSpan,
+  ImgLogo,
 } from "./Header.styled";
-import { Link } from "react-router-dom";
 
 import searchComponent from "../../Files/icons/search.png";
 import Buscet from "../../Files/icons/busket.png";
+import MyIcone from "../../Files/icons/MyIcone.png";
 
 const Header = () => {
   return (
     <ComponentHeader>
       <div>
-        <span>MamineRecepty</span>
+        <TitleSpan>
+          Mamine
+          <ImgLogo src={MyIcone} alt="MyIcone" />
+          Recepty
+        </TitleSpan>
       </div>
       <LinksBlock>
         <NavBar>
           <ListBlock>
             <Item>
-              <Link>About us</Link>
+              <LinkItem>About us</LinkItem>
             </Item>
             <Item>
-              <Link>Contact</Link>
+              <LinkItem>Contact</LinkItem>
             </Item>
             <Item>
-              <Link>Blog</Link>
+              <LinkItem>Blog</LinkItem>
             </Item>
           </ListBlock>
         </NavBar>

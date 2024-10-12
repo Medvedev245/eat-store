@@ -27,4 +27,10 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     height: auto;
   }
+
+  :root {
+    --iq-header-title: rgba(34, 32, 46, 1);
+    --iq-header-text: rgba(114, 110, 141, 1);
+    ;
+  }
 `;
