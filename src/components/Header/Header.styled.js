@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ComponentHeader = styled.header`
-  background-color: #efeaff;
+  /* background-color: #efeaff; */
   height: 70px;
   max-width: 1440px;
   display: flex;
@@ -15,6 +15,7 @@ export const ComponentHeader = styled.header`
 `;
 
 export const TitleSpan = styled.span`
+  color: var(--iq-header-title);
   display: flex;
   gap: 6px;
   font-family: Clash Display;
@@ -83,6 +84,7 @@ export const ImgLogo = styled.img`
 `;
 
 export const BtnBurger = styled.button`
+  background-color: white;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -99,6 +101,7 @@ export const BtnBurger = styled.button`
 `;
 
 export const Btns = styled.button`
+  background-color: white;
   width: 30px;
   height: 30px;
   border-radius: 5px;

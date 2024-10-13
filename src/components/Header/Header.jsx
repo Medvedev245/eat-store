@@ -34,11 +34,13 @@ const Header = () => {
   return (
     <ComponentHeader>
       <div>
-        <TitleSpan>
-          Mamine
-          <ImgLogo src={MyIcone} alt="MyIcone" />
-          Recepty
-        </TitleSpan>
+        <LinkItem to="/">
+          <TitleSpan>
+            Mamine
+            <ImgLogo src={MyIcone} alt="MyIcone" />
+            Recepty
+          </TitleSpan>
+        </LinkItem>
       </div>
       <LinksBlock>
         <NavBar isOpen={isOpen}>
