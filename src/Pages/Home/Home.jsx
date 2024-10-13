@@ -23,7 +23,7 @@ const Home = () => {
   //     .catch((error) => {
   //       console.error("Ошибка:", error);
   //     });
-  return <div>drgergeas</div>;
+  return <div>Home</div>;
 };
 
 export default Home;

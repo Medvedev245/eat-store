@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ComponentHeader,
   LinksBlock,
@@ -10,13 +10,27 @@ import {
   LinkItem,
   TitleSpan,
   ImgLogo,
+  BtnBurger,
+  Btns,
 } from "./Header.styled";
+import BlurBackground from "../BlurBackground/BlurBackground";
 
 import searchComponent from "../../Files/icons/search.png";
 import Buscet from "../../Files/icons/busket.png";
 import MyIcone from "../../Files/icons/MyIcone.png";
+import Burger from "../../Files/icons/Burger.png";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <ComponentHeader>
       <div>
@@ -27,28 +41,38 @@ const Header = () => {
         </TitleSpan>
       </div>
       <LinksBlock>
-        <NavBar>
+        <NavBar isOpen={isOpen}>
           <ListBlock>
             <Item>
-              <LinkItem>About us</LinkItem>
+              <LinkItem to="/about-us" onClick={closeMenu}>
+                About us
+              </LinkItem>
             </Item>
             <Item>
-              <LinkItem>Contact</LinkItem>
+              <LinkItem to="/contact" onClick={closeMenu}>
+                Contact
+              </LinkItem>
             </Item>
             <Item>
-              <LinkItem>Blog</LinkItem>
+              <LinkItem to="/blog" onClick={closeMenu}>
+                Blog
+              </LinkItem>
             </Item>
           </ListBlock>
         </NavBar>
         <IconsBlock>
-          <button>
+          <Btns>
             <Img src={searchComponent} alt="Search" />
-          </button>
-          <button>
+          </Btns>
+          <Btns>
             <Img src={Buscet} alt="Buscet" />
-          </button>
+          </Btns>
+          <BtnBurger onClick={toggleMenu}>
+            <Img src={Burger} alt="Menu" />
+          </BtnBurger>
         </IconsBlock>
       </LinksBlock>
+      {isOpen && <BlurBackground onClick={toggleMenu} />}
     </ComponentHeader>
   );
 };

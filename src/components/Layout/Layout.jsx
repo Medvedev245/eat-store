@@ -8,7 +8,7 @@ import { ComponentLayout } from "./Layout.styled";
 const Layout = () => {
   return (
     <ComponentLayout>
-      <Header>thrth</Header>
+      <Header />
       <main>
         <Suspense
           fallback={
