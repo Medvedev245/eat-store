@@ -1,15 +1,20 @@
-import React, { useEffect } from "react";
-import { SectionCategory } from "./CategoryBlock.styled";
-import axios from "axios";
+import React from "react";
+import {
+  Img,
+  MainTitle,
+  Overlay,
+  SectionCategory,
+} from "./CategoryBlock.styled";
+import BgImage from "../../Files/img/volga.jpg";
 
 const CategoryBlock = () => {
-  useEffect(() => {
-    axios.get("https://dummyjson.com/recipes/tags").then((res) => {
-      console.log(res.data);
-    });
-  });
-
-  return <SectionCategory>CategoryBlock</SectionCategory>;
+  return (
+    <SectionCategory>
+      <Img src={BgImage} alt="Food" />
+      <Overlay />
+      <MainTitle>What are you cooking today?</MainTitle>
+    </SectionCategory>
+  );
 };
 
 export default CategoryBlock;
