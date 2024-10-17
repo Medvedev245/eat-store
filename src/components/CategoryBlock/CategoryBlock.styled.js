@@ -11,18 +11,22 @@ export const SectionCategory = styled.section`
   width: 100vw; */
   /* background-color: #efeaff; */
 
+  @media screen and (max-width: 1200px) {
+    width: 768px;
+    height: 350px;
+  }
   @media screen and (max-width: 767px) {
+    width: 320px;
+    height: 150px;
   }
 `;
 
 export const Overlay = styled.div`
-  /* display: flex;
-  justify-content: space-evenly; */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 568px;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
   pointer-events: none; /* Ensure the overlay doesn't block interactions */
 `;
@@ -30,6 +34,14 @@ export const Overlay = styled.div`
 export const Img = styled.img`
   height: 568px;
   width: 1200px;
+  @media screen and (max-width: 1200px) {
+    width: 767px;
+    height: 350px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    height: 150px;
+  }
 `;
 
 export const MainTitle = styled.h1`
