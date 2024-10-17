@@ -4,13 +4,12 @@ import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { ComponentLayout } from "./Layout.styled";
-import CategoryBlock from "../CategoryBlock/CategoryBlock";
 
 const Layout = () => {
   return (
     <ComponentLayout>
       <Header />
-      <CategoryBlock />
+
       <main>
         <Suspense
           fallback={

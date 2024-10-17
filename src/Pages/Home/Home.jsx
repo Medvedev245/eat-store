@@ -1,4 +1,5 @@
 import React from "react";
+import CategoryBlock from "../../components/CategoryBlock/CategoryBlock";
 
 const Home = () => {
   //   const promise = new Promise((resolve, reject) => {
@@ -23,7 +24,11 @@ const Home = () => {
   //     .catch((error) => {
   //       console.error("Ошибка:", error);
   //     });
-  return <div>Home</div>;
+  return (
+    <div>
+      <CategoryBlock />
+    </div>
+  );
 };
 
 export default Home;

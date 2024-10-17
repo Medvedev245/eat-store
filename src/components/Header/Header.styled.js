@@ -17,10 +17,14 @@ export const ComponentHeader = styled.header`
 export const TitleSpan = styled.span`
   color: var(--iq-header-title);
   display: flex;
+  align-items: center;
   gap: 6px;
   font-family: Clash Display;
   font-size: 24px;
   font-weight: 500;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
 
 export const NavBar = styled.nav`
@@ -29,10 +33,11 @@ export const NavBar = styled.nav`
   @media screen and (max-width: 768px) {
     z-index: 10;
     position: absolute;
-    width: 50%;
+    /* width: 50%; */
     height: 100vh;
     top: 0;
     right: 0;
+    width: ${(props) => (props.isOpen ? "50%;" : "10px")};
     transform: ${(props) =>
       props.isOpen ? "translateX(0)" : "translateX(100%)"};
     position: ${(props) => (props.isOpen ? "absolute" : "relative")};

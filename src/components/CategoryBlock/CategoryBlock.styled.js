@@ -49,9 +49,14 @@ export const MainTitle = styled.h1`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
   align-items: center;
   color: white;
   font-size: 40px;
+  text-align: center;
+  @media screen and (max-width: 1200px) {
+    font-size: 26px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
