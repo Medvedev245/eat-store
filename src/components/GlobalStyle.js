@@ -31,6 +31,7 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --iq-header-title: rgba(34, 32, 46, 1);
     --iq-header-text: rgba(114, 110, 141, 1);
+    --iq-brand-text: rgba(42, 37, 75, 1);
     ;
   }
 `;

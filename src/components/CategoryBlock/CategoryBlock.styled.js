@@ -1,21 +1,18 @@
-// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const SectionCategory = styled.section`
-  width: 1200px;
   position: relative;
   margin: 0 auto;
-  /* display: flex;
-  justify-content: space-evenly; */
-  /* height: 65px;
-  width: 100vw; */
-  /* background-color: #efeaff; */
-
+  width: 1100px;
   @media screen and (max-width: 1200px) {
-    width: 768px;
-    height: 350px;
+    width: 700px;
+    /* height: 350px; */
   }
   @media screen and (max-width: 767px) {
+    width: 520px;
+    /* height: 150px; */
+  }
+  @media screen and (max-width: 587px) {
     width: 320px;
     height: 150px;
   }
@@ -33,12 +30,16 @@ export const Overlay = styled.div`
 
 export const Img = styled.img`
   height: 568px;
-  width: 1200px;
+  width: 1100px;
   @media screen and (max-width: 1200px) {
-    width: 767px;
+    width: 700px;
     height: 350px;
   }
   @media screen and (max-width: 767px) {
+    width: 520px;
+    height: 250px;
+  }
+  @media screen and (max-width: 587px) {
     width: 320px;
     height: 150px;
   }
