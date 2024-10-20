@@ -14,11 +14,12 @@ export const Title = styled.h2`
   text-align: center;
   font-size: 24px;
   color: var(--iq-brand-text);
-
+  margin-bottom: 50px;
   @media screen and (max-width: 1200px) {
   }
   @media screen and (max-width: 767px) {
     font-size: 20px;
+    margin-bottom: 35px;
   }
 `;
 

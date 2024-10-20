@@ -4,13 +4,14 @@ export const SectionCategory = styled.section`
   position: relative;
   margin: 0 auto;
   width: 1100px;
+  margin-bottom: 60px;
   @media screen and (max-width: 1200px) {
     width: 700px;
     /* height: 350px; */
   }
   @media screen and (max-width: 767px) {
     width: 520px;
-    /* height: 150px; */
+    margin-bottom: 30px;
   }
   @media screen and (max-width: 587px) {
     width: 320px;
