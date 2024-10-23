@@ -6,6 +6,7 @@ export const getAllProducts = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const res = await axios.get("https://dummyjson.com/recipes");
+      //   return res.data;
       return res.data;
     } catch (error) {
       console.log(error);

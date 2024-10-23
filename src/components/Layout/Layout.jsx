@@ -12,7 +12,6 @@ const Layout = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log("object");
     dispatch(getAllProducts());
   }, [dispatch]);
 
