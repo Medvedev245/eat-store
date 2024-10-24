@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SectionNewRecepies } from "./NewRecepies.styled";
+import { RecipeWrap, SectionNewRecepies } from "./NewRecepies.styled";
 import { useSelector } from "react-redux";
 import OneRecipe from "../OneRecipe/OneRecipe";
 
@@ -14,16 +14,14 @@ const NewRecepies = () => {
   }
   const popularRecipes = mostFamous(products);
   console.log(popularRecipes);
-  //   console.log(mostFamous(products).map((el) => console.log(el)));
   return (
     <SectionNewRecepies>
       <h2>Our most popular recipes</h2>
-      <div>
+      <RecipeWrap>
         {popularRecipes.map((recipe) => (
           <OneRecipe recipe={recipe} />
-          //   <div key={recipe.key}>{recipe.rating}</div>
         ))}
-      </div>
+      </RecipeWrap>
       <Link rel="#" href="#" />
     </SectionNewRecepies>
   );
