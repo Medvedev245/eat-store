@@ -7,6 +7,9 @@ const AboutUs = lazy(() => import("../../Pages/AboutUs/AboutUs.jsx"));
 const Contact = lazy(() => import("../../Pages/Contacts/Contacts.jsx"));
 const Blog = lazy(() => import("../../Pages/Blog/Blog.jsx"));
 const Layout = lazy(() => import("../Layout/Layout"));
+const OneRecipePage = lazy(() =>
+  import("../../Pages/OneRecipePage/OneRecipePage.jsx")
+);
 
 const App = () => {
   return (
@@ -20,7 +23,7 @@ const App = () => {
         <Route path="about-us" element={<AboutUs />} />
         <Route path="contact" element={<Contact />} />
         <Route path="blog" element={<Blog />} />
-        {/* <Route path="contact/:id" element={<ContactDetails />} /> */}
+        <Route path="products/:id" element={<OneRecipePage />} />
       </Route>
     </Routes>
     // </Suspense>

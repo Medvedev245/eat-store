@@ -9,10 +9,11 @@ const NewRecepies = () => {
   //   console.log(products.recipes);
   function mostFamous(products) {
     if (!products || !products.recipes) return [];
-    console.log(products);
+    // console.log(products);
     return products.recipes.filter((item) => item.rating === 4.9);
   }
   const popularRecipes = mostFamous(products);
+
   console.log(popularRecipes);
   return (
     <SectionNewRecepies>

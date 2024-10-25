@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const OneItem = styled.div`
+export const OneItem = styled(Link)`
   width: 195px;
 `;
 

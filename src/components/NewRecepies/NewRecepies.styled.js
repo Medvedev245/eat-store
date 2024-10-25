@@ -15,3 +15,5 @@ export const RecipeWrap = styled.div`
   flex-wrap: wrap;
   gap: 20px;
 `;
+
+// export const RecipeLink = styled(Link)``;
