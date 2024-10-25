@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const SectionNewRecepies = styled.section`
-  @media screen and (min-width: 1200px) {
-    padding: 0 30px;
+  padding: 50px 30px;
+
+  @media screen and (max-width: 1200px) {
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 767px) {
     padding: 0 15px;
   }
 `;
@@ -16,4 +17,13 @@ export const RecipeWrap = styled.div`
   gap: 20px;
 `;
 
-// export const RecipeLink = styled(Link)``;
+export const TextWrap = styled.h2`
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 35px;
+  color: var(--iq-brand-text);
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+`;
