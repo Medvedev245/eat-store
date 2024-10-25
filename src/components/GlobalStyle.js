@@ -31,7 +31,10 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --iq-header-title: rgba(34, 32, 46, 1);
     --iq-header-text: rgba(114, 110, 141, 1);
+    --iq-header-bottom: rgba(0, 0, 0, 0.1);
     --iq-brand-text: rgba(42, 37, 75, 1);
+
+    --iq-nameFood-text: rgba(194, 11, 11, 1);
     ;
   }
 `;

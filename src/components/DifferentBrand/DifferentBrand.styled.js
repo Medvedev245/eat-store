@@ -4,6 +4,7 @@ export const DifferentSection = styled.section`
   max-width: 1440px;
   margin: 0 auto;
   padding: 30px 0;
+  border-bottom: 1px solid var(--iq-header-bottom);
   @media screen and (max-width: 1200px) {
   }
   @media screen and (max-width: 767px) {

@@ -2,14 +2,13 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ComponentHeader = styled.header`
-  /* background-color: #efeaff; */
   height: 70px;
   max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--iq-header-bottom);
   @media screen and (min-width: 767px) {
   }
 `;
