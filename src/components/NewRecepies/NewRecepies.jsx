@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { RecipeWrap, SectionNewRecepies, TextWrap } from "./NewRecepies.styled";
+import {
+  ButtonLink,
+  RecipeWrap,
+  SectionNewRecepies,
+  TextWrap,
+} from "./NewRecepies.styled";
 import { useSelector } from "react-redux";
 import OneRecipe from "../OneRecipe/OneRecipe";
 
@@ -17,13 +22,13 @@ const NewRecepies = () => {
   console.log(popularRecipes);
   return (
     <SectionNewRecepies>
-      <TextWrap>Our most popular recipes</TextWrap>
+      <TextWrap>Naše nejoblíbenější recepty</TextWrap>
       <RecipeWrap>
         {popularRecipes.map((recipe) => (
           <OneRecipe recipe={recipe} />
         ))}
       </RecipeWrap>
-      <Link rel="#" href="#" />
+      <ButtonLink rel="#" href="#" />
     </SectionNewRecepies>
   );
 };

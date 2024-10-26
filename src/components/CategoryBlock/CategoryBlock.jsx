@@ -12,7 +12,7 @@ const CategoryBlock = () => {
     <SectionCategory>
       <Img src={BgImage} alt="Food" />
       <Overlay />
-      <MainTitle>What are you cooking today?</MainTitle>
+      <MainTitle>Co dnes vaříte?</MainTitle>
     </SectionCategory>
   );
 };

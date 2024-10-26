@@ -1,5 +1,12 @@
 import React from "react";
-import { ImgRecipe, OneItem, SpanRecipe } from "./OneRecipe.styled";
+import {
+  ImgRecipe,
+  OneItem,
+  RaithWrap,
+  SpanRecipe,
+  TextRecipe,
+} from "./OneRecipe.styled";
+import CustomizedRating from "../Raithing/Raithing";
 
 const OneRecipe = ({ recipe }) => {
   //   console.log(recipe);
@@ -7,18 +14,16 @@ const OneRecipe = ({ recipe }) => {
     <OneItem to={`products/${recipe.id}`}>
       <ImgRecipe src={recipe.image} alt="" />
       <SpanRecipe>{recipe.name}</SpanRecipe>
-      <p>{recipe.instructions[0]}</p>
-      <div>
+      <TextRecipe>{recipe.instructions[0]}</TextRecipe>
+      <RaithWrap>
         <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <CustomizedRating recipe={recipe} />
         </div>
         <div>
           {/* <svg />
-          <span>??? min</span> */}
+                <span>??? min</span> */}
         </div>
-      </div>
+      </RaithWrap>
     </OneItem>
   );
 };

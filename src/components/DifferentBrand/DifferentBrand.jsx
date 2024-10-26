@@ -16,7 +16,7 @@ import Flower from "../../Files/icons/Flower.png";
 const DifferentBrand = () => {
   return (
     <DifferentSection>
-      <Title>What makes our brand different</Title>
+      <Title>Čím se naše značka liší</Title>
 
       <List>
         <Element>
