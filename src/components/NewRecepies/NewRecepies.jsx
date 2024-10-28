@@ -25,10 +25,12 @@ const NewRecepies = () => {
       <TextWrap>Naše nejoblíbenější recepty</TextWrap>
       <RecipeWrap>
         {popularRecipes.map((recipe) => (
-          <OneRecipe recipe={recipe} />
+          <OneRecipe key={recipe.id} recipe={recipe} />
         ))}
       </RecipeWrap>
-      <ButtonLink rel="#" href="#" />
+      <ButtonLink rel="#" href="#">
+        Zobrazit více
+      </ButtonLink>
     </SectionNewRecepies>
   );
 };

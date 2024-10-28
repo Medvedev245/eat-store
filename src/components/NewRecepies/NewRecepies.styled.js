@@ -5,6 +5,7 @@ export const SectionNewRecepies = styled.section`
   padding: 50px 30px;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid var(--iq-header-bottom);
 
   @media screen and (max-width: 1200px) {
   }
@@ -21,6 +22,7 @@ export const RecipeWrap = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 35px;
+
   @media screen and (max-width: 1000px) {
     width: 600px;
   }
@@ -32,7 +34,7 @@ export const RecipeWrap = styled.div`
 
 export const TextWrap = styled.h2`
   font-size: 32px;
-  font-weight: 400;
+  /* font-weight: 400; */
   margin-bottom: 35px;
   color: var(--iq-brand-text);
 
@@ -47,17 +49,19 @@ export const ButtonLink = styled(Link)`
   width: 170px;
   height: 55px;
   margin: 0 auto;
-  background-color: #007bff;
-  color: white;
+  padding: 16px 37px;
+  border: 2px solid var(--iq-header-title);
+  color: var(--iq-brand-text);
   text-decoration: none;
   border-radius: 5px;
   align-items: center;
   &:hover {
-    background-color: #0056b3;
+    background-color: var(--iq-header-title);
   }
 
   @media screen and (max-width: 767px) {
     font-size: 20px;
     margin-bottom: 15px;
+    padding: 15px 25px;
   }
 `;

@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+export const ImgRecipe = styled.img`
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+`;
 export const OneItem = styled(Link)`
   width: 195px;
   text-decoration: none;
@@ -9,12 +14,15 @@ export const OneItem = styled(Link)`
   background-color: var(--iq-Card-BG);
   border-radius: 10px;
   justify-content: space-between;
-`;
-
-export const ImgRecipe = styled.img`
-  height: 200px;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  &:hover {
+    background-color: var(--iq-Card-BG);
+    transform: scale(1.05); // легкое увеличение
+    transition: transform 0.3s ease, filter 0.3s ease;
+    & ${ImgRecipe} {
+      filter: brightness(0.8); // уменьшение яркости
+      /* transition: transform 0.3s ease, filter 0.3s ease; */
+    }
+  }
 `;
 
 export const SpanRecipe = styled.p`
