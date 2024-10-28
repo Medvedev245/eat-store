@@ -6,6 +6,9 @@ export const OneItem = styled(Link)`
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  background-color: var(--iq-Card-BG);
+  border-radius: 10px;
+  justify-content: space-between;
 `;
 
 export const ImgRecipe = styled.img`
@@ -31,4 +34,10 @@ export const TextRecipe = styled.p`
 export const RaithWrap = styled.div`
   display: flex;
   margin-top: auto;
+`;
+export const Wrap = styled.div`
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `;
