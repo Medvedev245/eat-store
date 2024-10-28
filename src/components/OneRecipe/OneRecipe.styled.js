@@ -41,11 +41,44 @@ export const TextRecipe = styled.p`
 
 export const RaithWrap = styled.div`
   display: flex;
+  flex-direction: column;
   margin-top: auto;
 `;
+
 export const Wrap = styled.div`
-  padding: 0 10px;
+  padding: 0 10px 10px 10px;
   display: flex;
   flex-direction: column;
   height: 100%;
+`;
+
+export const ImgTytle = styled.img`
+  width: 14px;
+  height: 14px;
+`;
+
+export const RaithSpan = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-bottom: 8px;
+`;
+
+export const WrapDescr = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const WrapElements = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const SpanTime = styled.span`
+  font-size: 15px;
+  color: var(--iq-brand-text);
 `;

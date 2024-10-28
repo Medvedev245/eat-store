@@ -21,12 +21,12 @@ const CustomizedRating = ({ recipe }) => {
     <Box sx={{ "& > legend": { mt: 1 } }}>
       {/* <Typography component="legend">Custom icon and color</Typography> */}
       <StyledRating
-        name="disabled"
-        disabled
+        // name="disabled"
+        readOnly
         size="small"
         defaultValue={recipe.rating}
         getLabelText={(value) => `${value} Heart${value !== 1 ? "s" : ""}`}
-        precision={0.5}
+        precision={0.1}
         icon={<FavoriteIcon fontSize="inherit" />}
         emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
       />

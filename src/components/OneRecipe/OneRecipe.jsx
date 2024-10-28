@@ -1,13 +1,20 @@
 import React from "react";
 import {
   ImgRecipe,
+  ImgTytle,
   OneItem,
   RaithWrap,
   SpanRecipe,
   TextRecipe,
   Wrap,
+  RaithSpan,
+  WrapDescr,
+  WrapElements,
+  SpanTime,
 } from "./OneRecipe.styled";
 import CustomizedRating from "../Raithing/Raithing";
+import IconFood from "../../Files/icons/MyIcone.png";
+import Clock from "../../Files/icons/Clock.png";
 
 const OneRecipe = ({ recipe }) => {
   //   console.log(recipe);
@@ -18,13 +25,20 @@ const OneRecipe = ({ recipe }) => {
         <SpanRecipe>{recipe.name}</SpanRecipe>
         <TextRecipe>{recipe.instructions[0]}</TextRecipe>
         <RaithWrap>
-          <div>
+          <RaithSpan>
             <CustomizedRating recipe={recipe} />
-          </div>
-          <div>
-            {/* <svg />
-                <span>??? min</span> */}
-          </div>
+            <span>{recipe.rating} / 5</span>
+          </RaithSpan>
+          <WrapDescr>
+            <WrapElements>
+              <ImgTytle src={IconFood} alt="IconFood" />
+              <SpanTime>{recipe.mealType[0]}</SpanTime>
+            </WrapElements>
+            <WrapElements>
+              <ImgTytle src={Clock} alt="Clock" />
+              <SpanTime>{recipe.cookTimeMinutes} min</SpanTime>
+            </WrapElements>
+          </WrapDescr>
         </RaithWrap>
       </Wrap>
     </OneItem>
