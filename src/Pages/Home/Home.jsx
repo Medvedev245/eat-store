@@ -3,6 +3,7 @@ import CategoryBlock from "../../components/CategoryBlock/CategoryBlock";
 import DifferentBrand from "../../components/DifferentBrand/DifferentBrand";
 import { HomeSection } from "./Home.styled";
 import NewRecepies from "../../components/NewRecepies/NewRecepies";
+import JoinBlock from "../../components/JoinBlock/JoinBlock";
 
 const Home = () => {
   //   const promise = new Promise((resolve, reject) => {
@@ -32,6 +33,7 @@ const Home = () => {
       <CategoryBlock />
       <DifferentBrand />
       <NewRecepies />
+      <JoinBlock />
     </HomeSection>
   );
 };
