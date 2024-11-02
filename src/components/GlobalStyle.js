@@ -35,6 +35,8 @@ export const GlobalStyle = createGlobalStyle`
     --iq-header-bottom: rgba(0, 0, 0, 0.1);
     --iq-brand-text: rgba(42, 37, 75, 1);
     --iq-Card-BG: rgba(233, 30, 99, .14);
+    --iq-BgJoinBlock: rgba(249, 249, 249, 1);
+
     ;
   }
 `;

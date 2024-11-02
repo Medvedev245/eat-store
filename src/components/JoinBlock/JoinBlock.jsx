@@ -1,17 +1,29 @@
 import React from "react";
+import {
+  FormWrap,
+  MainContainer,
+  SectionJoinBlock,
+  WrapMainText,
+  WrapText,
+} from "./JoinBlock.styled";
 
 const JoinBlock = () => {
   return (
-    <section>
-      {/* <div>
-        <h2>Přihlaste se k odběru a dostávejte nové recepty na e-mail.</h2>
-        <p></p>
-        <form action="">
+    <SectionJoinBlock>
+      <MainContainer>
+        <WrapMainText>
+          Přihlaste se k odběru a dostávejte nové recepty na e-mail.
+        </WrapMainText>
+        <WrapText>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          debitis quod suscipit vitae nisi labore! Eligendi est ducimus mollitia
+        </WrapText>
+        <FormWrap action="">
           <input type="text" />
-          <button></button>
-        </form>
-      </div> */}
-    </section>
+          <button type="submit">button</button>
+        </FormWrap>
+      </MainContainer>
+    </SectionJoinBlock>
   );
 };
 

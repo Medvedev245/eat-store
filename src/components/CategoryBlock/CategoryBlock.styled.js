@@ -5,6 +5,7 @@ export const SectionCategory = styled.section`
   margin: 0 auto;
   width: 1100px;
   margin-bottom: 60px;
+  margin-top: 30px;
   @media screen and (max-width: 1200px) {
     width: 700px;
     /* height: 350px; */
