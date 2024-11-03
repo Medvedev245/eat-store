@@ -17,8 +17,9 @@ import IconFood from "../../Files/icons/MyIcone.png";
 import Clock from "../../Files/icons/Clock.png";
 
 const OneRecipe = ({ recipe }) => {
-  //   console.log(recipe);
+  console.log(recipe);
   return (
+    // <div></div>
     <OneItem to={`products/${recipe.id}`}>
       <ImgRecipe src={recipe.image} alt="image" />
       <Wrap>

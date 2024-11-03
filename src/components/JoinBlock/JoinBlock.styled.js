@@ -57,7 +57,7 @@ export const WrapText = styled.p`
   margin-bottom: 70px;
   @media screen and (max-width: 1200px) {
     font-size: 14px;
-    width: 300px;
+    width: 250px;
     margin-bottom: 45px;
   }
 

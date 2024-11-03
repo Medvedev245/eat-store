@@ -45,6 +45,7 @@ export const TextWrap = styled.h2`
 `;
 
 export const ButtonLink = styled(Link)`
+  text-align: center;
   display: inline-block;
   width: 170px;
   height: 55px;
@@ -57,9 +58,11 @@ export const ButtonLink = styled(Link)`
   align-items: center;
   &:hover {
     background-color: var(--iq-header-title);
+    transition: 0.5s;
   }
 
   @media screen and (max-width: 767px) {
+    width: 250px;
     font-size: 20px;
     margin-bottom: 15px;
     padding: 15px 25px;

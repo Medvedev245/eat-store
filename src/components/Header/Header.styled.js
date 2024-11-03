@@ -68,6 +68,10 @@ export const LinkItem = styled(Link)`
   font-family: Satoshi;
   text-decoration: none;
   color: var(--iq-header-text);
+  &:hover,
+  &:focus {
+    color: var(--iq-nameFood-text);
+  }
   @media screen and (max-width: 768px) {
     /* display: none; */
   }
@@ -98,7 +102,8 @@ export const BtnBurger = styled.button`
   border-radius: 5px;
   &:hover,
   &:focus {
-    background-color: #bec4e6;
+    background-color: var(--iq-header-title);
+    transition: 0.5s;
   }
   @media screen and (max-width: 768px) {
     display: inline-block;
@@ -115,6 +120,7 @@ export const Btns = styled.button`
 
   &:hover,
   &:focus {
-    background-color: #bec4e6;
+    background-color: var(--iq-header-title);
+    transition: 0.5s;
   }
 `;
