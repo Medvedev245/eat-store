@@ -66,4 +66,48 @@ export const WrapText = styled.p`
   }
 `;
 
-export const FormWrap = styled.form``;
+export const FormWrap = styled.form`
+  height: 55px;
+  width: 470px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  @media screen and (max-width: 1200px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 300px;
+  }
+`;
+
+export const InputField = styled.input`
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: 767px) {
+  }
+`;
+
+export const SubmitButton = styled.button`
+  padding: 5px 5px;
+  width: 120px;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--iq-brand-color-hover);
+  }
+  @media screen and (max-width: 1200px) {
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 80px;
+    font-size: 10px;
+  }
+`;

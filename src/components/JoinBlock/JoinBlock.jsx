@@ -1,13 +1,20 @@
 import React from "react";
 import {
   FormWrap,
+  InputField,
   MainContainer,
   SectionJoinBlock,
+  SubmitButton,
   WrapMainText,
   WrapText,
 } from "./JoinBlock.styled";
 
 const JoinBlock = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const email = event.target[0].value;
+    console.log(email);
+  };
   return (
     <SectionJoinBlock>
       <MainContainer>
@@ -15,12 +22,11 @@ const JoinBlock = () => {
           Přihlaste se k odběru a dostávejte nové recepty na e-mail.
         </WrapMainText>
         <WrapText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          debitis quod suscipit vitae nisi labore! Eligendi est ducimus mollitia
+          Přihlaste se k odběru týdenních nových receptů od předních odborníků
         </WrapText>
-        <FormWrap action="">
-          <input type="text" />
-          <button type="submit">button</button>
+        <FormWrap onSubmit={handleSubmit}>
+          <InputField type="email" placeholder="Zadejte váš e-mail" />
+          <SubmitButton type="submit">Přihlásit se</SubmitButton>
         </FormWrap>
       </MainContainer>
     </SectionJoinBlock>
