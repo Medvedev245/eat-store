@@ -4,7 +4,7 @@ export const SectionJoinBlock = styled.section`
   width: 100%;
   height: 480px;
   background-color: var(--iq-BgJoinBlock);
-  /* padding: 55px 80px; */
+
   display: flex;
   justify-content: space-around;
   align-items: center;

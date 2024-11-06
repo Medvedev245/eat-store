@@ -1,8 +1,9 @@
 import React from "react";
+import { ComponentFooter } from "./Footer.styled";
 
 const Footer = () => {
   return (
-    <section>
+    <ComponentFooter>
       <div>
         <span>Logo</span>
         <div>adress</div>
@@ -12,7 +13,7 @@ const Footer = () => {
         <div>Social links</div>
       </div>
       <div> Copyright 2022 Avion LTD </div>
-    </section>
+    </ComponentFooter>
   );
 };
 
