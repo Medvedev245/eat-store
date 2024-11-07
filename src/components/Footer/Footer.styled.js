@@ -5,10 +5,17 @@ export const ComponentFooter = styled.footer`
   width: 100%;
   display: flex;
   background-color: var(--iq-Footr-BG);
-  /* align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
-  border-bottom: 1px solid var(--iq-header-bottom); */
+  color: var(--iq-Footr-text);
   @media screen and (min-width: 767px) {
   }
+`;
+
+export const WrapLogo = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+`;
+
+export const WrapAdress = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

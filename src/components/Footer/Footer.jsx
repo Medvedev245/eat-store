@@ -1,13 +1,26 @@
 import React from "react";
-import { ComponentFooter } from "./Footer.styled";
+import { ComponentFooter, WrapAdress, WrapLogo } from "./Footer.styled";
+import { ImgLogo, LinkItem, TitleSpan } from "../Header/Header.styled";
+import MyIcone from "../../Files/icons/MyIcone.png";
 
 const Footer = () => {
   return (
     <ComponentFooter>
-      <div>
-        <span>Logo</span>
-        <div>adress</div>
-      </div>
+      <WrapLogo>
+        <LinkItem to="/">
+          <TitleSpan>
+            Mamine
+            <ImgLogo src={MyIcone} alt="MyIcone" />
+            Recepty
+          </TitleSpan>
+        </LinkItem>
+        <WrapAdress>
+          <span>21 New Humpolec Street</span>
+          <span>Česká republika</span>
+          <span>Pelh5imovsky okres</span>
+          <span>432 34</span>
+        </WrapAdress>
+      </WrapLogo>
       <div>
         <span>Social links</span>
         <div>Social links</div>
