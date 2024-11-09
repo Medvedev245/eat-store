@@ -10,13 +10,20 @@ export const ComponentFooter = styled.footer`
   background-color: var(--iq-Footr-BG);
   color: var(--iq-Footr-text);
   padding: 50px 80px 0 50px;
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 767px) {
+    padding: 25px 0 25px 0px;
   }
 `;
 
-export const FooterWrap = styled.footer`
+export const FooterWrap = styled.div`
   display: flex;
   justify-content: space-around;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 `;
 
 export const WrapLogo = styled.div`
