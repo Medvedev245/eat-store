@@ -1,8 +1,12 @@
 import React from "react";
 import {
   ComponentFooter,
+  Copirith,
+  FooterWrap,
+  Image,
+  ImageLink,
   MainWrapLinks,
-  WrapAdress,
+  WrapAddress,
   WrapLinks,
   WrapLogo,
 } from "./Footer.styled";
@@ -18,33 +22,53 @@ import Pacage from "../../Files/IconsLinks/p.png";
 const Footer = () => {
   return (
     <ComponentFooter>
-      <WrapLogo>
-        <LinkItem to="/">
-          <TitleSpan>
-            Mamine
-            <ImgLogo src={MyIcone} alt="MyIcone" />
-            Recepty
-          </TitleSpan>
-        </LinkItem>
-        <WrapAdress>
-          <span>21 New Humpolec Street</span>
-          <span>Česká republika</span>
-          <span>Pelh5imovsky okres</span>
-          <span>432 34</span>
-        </WrapAdress>
-      </WrapLogo>
-      <MainWrapLinks>
-        <span>Social links</span>
-        <WrapLinks>
-          <img src={In} alt="" />
-          <img src={faceBook} alt="" />
-          <img src={Tv} alt="" />
-          <img src={Scype} alt="" />
-          <img src={Twitter} alt="" />
-          <img src={Pacage} alt="" />
-        </WrapLinks>
-      </MainWrapLinks>
-      <div> Copyright 2022 Avion LTD </div>
+      <FooterWrap>
+        <WrapLogo>
+          <LinkItem to="/">
+            <TitleSpan>
+              Mamine
+              <ImgLogo src={MyIcone} alt="MyIcone" />
+              Recepty
+            </TitleSpan>
+          </LinkItem>
+          <WrapAddress>
+            <span>21 New Humpolec Street</span>
+            <span>Česká republika</span>
+            <span>Pelhřimovsky okres</span>
+            <span>432 34</span>
+          </WrapAddress>
+        </WrapLogo>
+        <MainWrapLinks>
+          <span>Social links</span>
+          <WrapLinks>
+            <ImageLink to="#">
+              <Image src={In} alt="" />
+            </ImageLink>
+
+            <ImageLink to="#">
+              <Image src={faceBook} alt="" />
+            </ImageLink>
+
+            <ImageLink to="#">
+              <Image src={Tv} alt="" />
+            </ImageLink>
+
+            <ImageLink to="#">
+              <Image src={Scype} alt="" />
+            </ImageLink>
+
+            <ImageLink to="#">
+              <Image src={Twitter} alt="" />
+            </ImageLink>
+
+            <ImageLink to="#">
+              <Image src={Pacage} alt="" />
+            </ImageLink>
+          </WrapLinks>
+        </MainWrapLinks>
+      </FooterWrap>
+
+      <Copirith> Copyright 2024 MamineRecepty LTD </Copirith>
     </ComponentFooter>
   );
 };

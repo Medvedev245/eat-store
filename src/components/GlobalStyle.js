@@ -38,6 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     --iq-BgJoinBlock: rgba(249, 249, 249, 1);
     --iq-Footr-BG:  rgba(42, 37, 75, 1);
     --iq-Footr-text:  rgba(255, 255, 255, 1);
+    --iq-Footr-border: rgba(78, 77, 147, 1)
 
     ;
   }
