@@ -19,6 +19,10 @@ export const Text = styled.h2`
   }
 `;
 
+export const InnerText = styled.p`
+  text-align: justify;
+`;
+
 export const SectionContainer = styled.div`
   /* width: 1440px; */
   display: flex;

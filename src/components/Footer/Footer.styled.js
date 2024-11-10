@@ -11,7 +11,7 @@ export const ComponentFooter = styled.footer`
   color: var(--iq-Footr-text);
   padding: 50px 80px 0 50px;
   @media screen and (max-width: 767px) {
-    padding: 25px 0 25px 0px;
+    padding: 25px 0 0 0px;
   }
 `;
 
