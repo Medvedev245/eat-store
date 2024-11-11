@@ -56,7 +56,8 @@ export const ButtonLink = styled(Link)`
   text-decoration: none;
   border-radius: 5px;
   align-items: center;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--iq-header-title);
     transition: 0.5s;
   }

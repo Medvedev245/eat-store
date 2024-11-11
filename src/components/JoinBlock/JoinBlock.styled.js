@@ -92,15 +92,18 @@ export const InputField = styled.input`
 `;
 
 export const SubmitButton = styled.button`
-  padding: 5px 5px;
-  width: 120px;
-  height: 100%;
-  border: none;
+  width: 170px;
+  height: 55px;
+  padding: 4px 4px;
+  border: 2px solid var(--iq-header-title);
+  color: var(--iq-brand-text);
   border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: var(--iq-brand-color-hover);
+  align-items: center;
+  background-color: var(--iq-Footr-text);
+  &:hover,
+  &:focus {
+    background-color: var(--iq-header-title);
+    transition: 0.5s;
   }
   @media screen and (max-width: 1200px) {
   }
