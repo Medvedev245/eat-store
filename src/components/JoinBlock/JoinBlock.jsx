@@ -17,7 +17,7 @@ const JoinBlock = () => {
   };
   return (
     <SectionJoinBlock>
-      <MainContainer>
+      {/* <MainContainer>
         <WrapMainText>
           Přihlaste se k odběru a dostávejte nové recepty na e-mail.
         </WrapMainText>
@@ -28,7 +28,7 @@ const JoinBlock = () => {
           <InputField type="email" placeholder="Zadejte váš e-mail" />
           <SubmitButton type="submit">Přihlásit se</SubmitButton>
         </FormWrap>
-      </MainContainer>
+      </MainContainer> */}
     </SectionJoinBlock>
   );
 };
