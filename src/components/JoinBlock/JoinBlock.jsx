@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FormWrap,
   InputField,
@@ -10,14 +10,29 @@ import {
 } from "./JoinBlock.styled";
 
 const JoinBlock = () => {
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const email = event.target[0].value;
+    let email = event.target[0].value;
+    setIsSubmitting(true);
     console.log(email);
+
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setEmail("");
+      event.target.reset();
+    }, 1000);
   };
+
+  const handleChange = (event) => {
+    setEmail(event.target.value);
+  };
+
   return (
     <SectionJoinBlock>
-      {/* <MainContainer>
+      <MainContainer>
         <WrapMainText>
           Přihlaste se k odběru a dostávejte nové recepty na e-mail.
         </WrapMainText>
@@ -25,10 +40,18 @@ const JoinBlock = () => {
           Přihlaste se k odběru týdenních nových receptů od předních odborníků
         </WrapText>
         <FormWrap onSubmit={handleSubmit}>
-          <InputField type="email" placeholder="Zadejte váš e-mail" />
-          <SubmitButton type="submit">Přihlásit se</SubmitButton>
+          <InputField
+            type="email"
+            placeholder="Zadejte váš e-mail"
+            value={email}
+            onChange={handleChange}
+            disabled={isSubmitting} // Блокируем поле ввода при отправке
+          />
+          <SubmitButton type="submit" disabled={isSubmitting}>
+            {isSubmitting ? "Odesílání..." : "Přihlásit se"}
+          </SubmitButton>
         </FormWrap>
-      </MainContainer> */}
+      </MainContainer>
     </SectionJoinBlock>
   );
 };
