@@ -45,7 +45,7 @@ const JoinBlock = () => {
             placeholder="Zadejte váš e-mail"
             value={email}
             onChange={handleChange}
-            disabled={isSubmitting} // Блокируем поле ввода при отправке
+            disabled={isSubmitting}
           />
           <SubmitButton type="submit" disabled={isSubmitting}>
             {isSubmitting ? "Odesílání..." : "Přihlásit se"}
