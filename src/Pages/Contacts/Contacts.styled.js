@@ -5,8 +5,9 @@ export const ContainerContact = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  color: var(--iq-brand-text);
 `;
 
 export const TitleElement = styled.h2`

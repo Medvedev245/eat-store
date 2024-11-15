@@ -41,8 +41,8 @@ export default function FormDialog() {
         <DialogTitle>Subscribe</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            To subscribe to this website, please enter your email address here.
-            We will send updates occasionally.
+            Chcete-li se přihlásit k odběru tohoto webu, zadejte zde svou
+            e-mailovou adresu. Příležitostně budeme posílat aktualizace
           </DialogContentText>
           <TextField
             autoFocus
