@@ -21,7 +21,7 @@ export default function FormDialog() {
   return (
     <React.Fragment>
       <Button variant="outlined" onClick={handleClickOpen}>
-        Open form dialog
+        Okno formuláře
       </Button>
       <Dialog
         open={open}
@@ -38,11 +38,11 @@ export default function FormDialog() {
           },
         }}
       >
-        <DialogTitle>Subscribe</DialogTitle>
+        <DialogTitle>Upsat</DialogTitle>
         <DialogContent>
           <DialogContentText>
             Chcete-li se přihlásit k odběru tohoto webu, zadejte zde svou
-            e-mailovou adresu. Příležitostně budeme posílat aktualizace
+            e-mailovou adresu. Příležitostně budeme posílat aktualizace.
           </DialogContentText>
           <TextField
             autoFocus
@@ -57,8 +57,8 @@ export default function FormDialog() {
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-          <Button type="submit">Subscribe</Button>
+          <Button onClick={handleClose}>Zrušit</Button>
+          <Button type="submit">Upsat</Button>
         </DialogActions>
       </Dialog>
     </React.Fragment>
