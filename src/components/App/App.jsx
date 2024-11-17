@@ -3,6 +3,9 @@ import { Route, Routes } from "react-router-dom";
 
 // const ContactDetails = lazy(() => import("../ContactDetails/ContactDetails"));
 const Home = lazy(() => import("../../Pages/Home/Home"));
+const AllReecipies = lazy(() =>
+  import("../../Pages/AllReecipies/AllReecipies.jsx")
+);
 const AboutUs = lazy(() => import("../../Pages/AboutUs/AboutUs.jsx"));
 const Contact = lazy(() => import("../../Pages/Contacts/Contacts.jsx"));
 const Blog = lazy(() => import("../../Pages/Blog/Blog.jsx"));
@@ -17,9 +20,8 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        {/* <Route to="/about-us" element={<AboutUs />} />
+        <Route to="/AllReecipies" element={<AllReecipies />} />
         <Route to="/contact" element={<Contact />} />
-        <Route to="/blog" element={<Blog />} /> */}
         <Route path="about-us" element={<AboutUs />} />
         <Route path="contact" element={<Contact />} />
         <Route path="blog" element={<Blog />} />

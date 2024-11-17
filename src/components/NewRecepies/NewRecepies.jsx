@@ -33,9 +33,7 @@ const NewRecepies = () => {
               <OneRecipe key={recipe.id} recipe={recipe} />
             ))}
           </RecipeWrap>
-          <ButtonLink rel="#" href="#">
-            Zobrazit více
-          </ButtonLink>
+          <ButtonLink to="/allReecipies">Zobrazit více</ButtonLink>
         </>
       )}
     </SectionNewRecepies>
