@@ -64,10 +64,10 @@ const Header = () => {
         </NavBar>
         <IconsBlock>
           <Btns>
-            <Img src={searchComponent} alt="Search" />
+            <Img src={Buscet} alt="Buscet" />
           </Btns>
           <Btns>
-            <Img src={Buscet} alt="Buscet" />
+            <Img src={searchComponent} alt="Search" />
           </Btns>
           <BtnBurger onClick={toggleMenu}>
             <Img src={Burger} alt="Menu" />
