@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Notify } from "notiflix/build/notiflix-notify-aio";
 import {
   FormWrap,
   InputField,
@@ -23,6 +24,7 @@ const JoinBlock = () => {
       setIsSubmitting(false);
       setEmail("");
       event.target.reset();
+      Notify.success("Zpráva byla odeslána");
     }, 1000);
   };
 
