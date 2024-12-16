@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
     height: auto;
   }
 
-  :root {
+  /* :root {
     --iq-header-title: rgba(244, 67, 54, 1);
     --iq-nameFood-text: rgba(244, 67, 54, 1);
     --iq-header-text: rgba(114, 110, 141, 1);
@@ -42,4 +42,4 @@ export const GlobalStyle = createGlobalStyle`
 
     ;
   }
-`;
+`; */
