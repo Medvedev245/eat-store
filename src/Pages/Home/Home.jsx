@@ -30,10 +30,10 @@ const Home = () => {
     });
   return (
     <HomeSection>
-      <CategoryBlock />
+      {/* <CategoryBlock />
       <DifferentBrand />
       <NewRecepies />
-      <JoinBlock />
+      <JoinBlock /> */}
     </HomeSection>
   );
 };
