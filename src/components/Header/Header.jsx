@@ -55,11 +55,11 @@ const Header = () => {
                 Contact
               </LinkItem>
             </Item>
-            {/* <Item>
+            <Item>
               <LinkItem to="/blog" onClick={closeMenu}>
                 Blog
               </LinkItem>
-            </Item> */}
+            </Item>
           </ListBlock>
         </NavBar>
         <IconsBlock>
