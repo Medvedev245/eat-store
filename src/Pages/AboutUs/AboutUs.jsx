@@ -13,41 +13,40 @@ import our_team from "../../Files/img/our_team.jpg";
 const AboutUs = () => {
   return (
     <AboutContainer>
-      <Text>Abou Us</Text>
+      <Text>O nás</Text>
       <SectionContainer>
         <Section>
-          <SpanText>Nice to meet you</SpanText>
+          <SpanText>Rád vás poznávám</SpanText>
           <InnerText>
-            Is a phrase often uttered upon meeting someone for the first time.
-            It serves as a courteous acknowledgment of the introduction,
-            expressing a positive sentiment toward the encounter. This simple
-            greeting conveys warmth and friendliness, fostering a welcoming
-            atmosphere between individuals. It's a respectful way to initiate
-            conversation and establish a connection, laying the groundwork for
-            future interactions. Whether in a formal or informal setting, "Nice
-            to meet you" sets a pleasant tone and signifies an eagerness to
-            engage with others.
+            Je to fráze, která se často používá při setkání s někým poprvé.
+            Slouží jako zdvořilé uznání představení a vyjadřuje pozitivní postoj
+            k tomuto setkání. Tento jednoduchý pozdrav vyjadřuje vřelost a
+            přátelskost, čímž podporuje příjemnou atmosféru mezi lidmi. Je to
+            zdvořilý způsob, jak zahájit konverzaci a navázat kontakt, který
+            může vést k budoucím interakcím. Ať už v formálním nebo neformálním
+            prostředí, „Rád vás poznávám“ nastavuje příjemný tón a vyjadřuje
+            ochotu navázat kontakt s ostatními.
           </InnerText>
         </Section>
         <Section>
-          <SpanText>Join us</SpanText>
+          <SpanText>Přidejte se k nám</SpanText>
           <Image src={image} alt="me" width={600} height={350} />
         </Section>
 
         <Section>
-          <SpanText>Our team</SpanText>
+          <SpanText>Náš tým</SpanText>
           <Image src={our_team} alt="me" width={600} height={350} />
         </Section>
         <Section>
-          <SpanText>Our team</SpanText>
+          <SpanText>Náš tým</SpanText>
           <InnerText>
-            Our team consists of dedicated individuals who bring diverse skills
-            and perspectives to the table. Each member contributes their unique
-            talents and experiences, working collaboratively towards common
-            goals. Together, we strive for excellence, innovation, and success.
-            With strong communication and teamwork, we tackle challenges and
-            celebrate achievements, fostering a supportive and inclusive
-            environment where everyone can thrive.
+            Náš tým se skládá z oddaných jednotlivců, kteří přinášejí různé
+            dovednosti a pohledy na věc. Každý člen přispívá svými jedinečnými
+            schopnostmi a zkušenostmi a společně pracujeme na dosažení
+            společných cílů. Usilujeme o výjimečnost, inovace a úspěch. Díky
+            silné komunikaci a týmové spolupráci překonáváme výzvy a slavíme
+            úspěchy, čímž vytváříme podpůrné a inkluzivní prostředí, ve kterém
+            se každý může rozvíjet.
           </InnerText>
         </Section>
       </SectionContainer>
